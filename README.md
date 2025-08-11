@@ -9,7 +9,7 @@ I'm learning React by building components from scratch, one step at a time — f
 
 - [x] ✅ Button component (with props)
 - [x] ✅ Alert/Message display
-- [ ] ✅ Avatar (image + name)
+- [x] ✅ Avatar (image + name)
 - [ ] Badge (dynamic label)
 - [ ] Card (title, image, description)
 
