@@ -2,6 +2,7 @@ import Button from "./components/Button";
 import {useState} from "react";
 import avatarImg from './components/images/my-avatar.jpg';
 import Avatar from "./components/Avatar";
+import Badge from "./components/Badge";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,7 +23,7 @@ function App() {
   {/* If your component uses {children} → use nested content: <Button>Click me!</Button>
       If your component uses {text} → use props: <Button text="Click me!" /> */}
       <div className="Alert">
-      <Button text="Click me!" color="red" onClick={()=> alert ("Well document, your first alert button is working! Now let's see what the blue button does." )}></Button>
+      <Button text="Click me!" color="red" onClick={()=> alert ("Well done, your first alert button is working! Now let's create and test the Counter." )}></Button>
       </div> 
       <div className="Counter">
         <Button color="blue" onClick={increment}>Add +1</Button>
@@ -32,8 +33,17 @@ function App() {
       <div className="Toggle">
         <Button text={showMessage ? "Hide Message" : "Show Message"} onClick={toggleMessage} color="black"></Button>
         {showMessage && (
-        <p> 🎉 Hello, this is your first toggle message!</p>
+        <p> 🎉 This is your first toggle message! Keep up the good work.</p>
         )}
+      </div>
+      <div className="Badge" style={{ display: "flex", gap: "10px"}}>
+        <Badge label="New" color="green" icon="✅"/>
+        <Badge label="5" color="orange" showIcon="true"/>
+        <Badge label="Sale" color="red"/>
+      </div>
+      <div className="dismissable" style={{ display: "flex", gap: "10px"}}>
+        <Badge label="Beta" color="purple" icon="🧪" dismissible />
+        <Badge label="Error" color="red" icon="⚠️" dismissible />
       </div>
     </div>
   );
