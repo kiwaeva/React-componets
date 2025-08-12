@@ -3,6 +3,9 @@ import {useState} from "react";
 import avatarImg from './components/images/my-avatar.jpg';
 import Avatar from "./components/Avatar";
 import Badge from "./components/Badge";
+import Card from "./components/Card";
+import cardImg from './components/images/morticia.jpg';
+import cardsData from './components/data/cardsData';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -44,6 +47,23 @@ function App() {
       <div className="dismissable" style={{ display: "flex", gap: "10px"}}>
         <Badge label="Beta" color="purple" icon="🧪" dismissible />
         <Badge label="Error" color="red" icon="⚠️" dismissible />
+      </div>
+      <div className="Cards" style={{
+            display: "flex",
+            gap: "20px",
+            justifyContent: "center",
+            flexWrap: "wrap", // optional: stack on small screens
+      }}>
+        <Card image={cardImg} title='Morticia Addams' description="Elegant, eerie, and endlessly enchanting." size='50'/>
+        {/* If stored in data file in a big project then:  */}
+        {cardsData.map((card, index) => (
+        <Card
+        key={index}
+        title={card.title}
+        image={card.image}
+        description={card.description}
+    />
+  ))}
       </div>
     </div>
   );
