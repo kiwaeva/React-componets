@@ -6,6 +6,8 @@ import Badge from "./components/Badge";
 import Card from "./components/Card";
 import cardImg from './components/images/morticia.jpg';
 import cardsData from './components/data/cardsData';
+import DayNightToggle from './components/DayNightToggle';
+import './index.css';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,15 +28,15 @@ function App() {
   {/* If your component uses {children} → use nested content: <Button>Click me!</Button>
       If your component uses {text} → use props: <Button text="Click me!" /> */}
       <div className="Alert">
-      <Button text="Click me!" color="red" onClick={()=> alert ("Well done, your first alert button is working! Now let's create and test the Counter." )}></Button>
+      <Button textColor="white" text="Click me!" color="red" onClick={()=> alert ("Well done, your first alert button is working! Now let's create and test the Counter." )}></Button>
       </div> 
       <div className="Counter">
-        <Button color="blue" onClick={increment}>Add +1</Button>
-        <Button color="green" onClick={decrement}> Deduct -1</Button>
+        <Button textColor="white" color="blue" onClick={increment}>Add +1</Button>
+        <Button textColor="white" color="green" onClick={decrement}> Deduct -1</Button>
         <h1>{count}</h1>
       </div>
-      <div className="Toggle">
-        <Button text={showMessage ? "Hide Message" : "Show Message"} onClick={toggleMessage} color="black"></Button>
+      <div className="toggle">
+        <Button text={showMessage ? "Hide Message" : "Show Message"} onClick={toggleMessage}></Button>
         {showMessage && (
         <p> 🎉 This is your first toggle message! Keep up the good work.</p>
         )}
@@ -48,12 +50,7 @@ function App() {
         <Badge label="Beta" color="purple" icon="🧪" dismissible />
         <Badge label="Error" color="red" icon="⚠️" dismissible />
       </div>
-      <div className="Cards" style={{
-            display: "flex",
-            gap: "20px",
-            justifyContent: "center",
-            flexWrap: "wrap", // optional: stack on small screens
-      }}>
+      <div className="Cards">
         <Card image={cardImg} title='Morticia Addams' description="Elegant, eerie, and endlessly enchanting." size='50'/>
         {/* If stored in data file in a big project then:  */}
         {cardsData.map((card, index) => (
@@ -64,6 +61,9 @@ function App() {
         description={card.description}
     />
   ))}
+      </div>
+      <div>
+      <DayNightToggle />
       </div>
     </div>
   );

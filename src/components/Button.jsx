@@ -1,11 +1,11 @@
-const Button = ({ text, children, onClick, color}) => {
+const Button = ({ text, children, onClick, color, textColor}) => {
     return (
       // example of inline styling for learning purposes 
       // the rest of the styling added in index.css
       <button 
       type="button"   
       style={{
-        color: "white",          // text color
+        color: textColor,          // text color
         backgroundColor: color,  // button background
         padding: "10px 20px",
         border: "none",

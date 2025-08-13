@@ -1,6 +1,6 @@
 const Avatar = ({ name, imageUrl, size= 50 }) => {
     return (
-        <div>
+        <div className='avatar'>
          <img src={imageUrl} alt={name} style={{
             width: `${size}px`,
             height: `${size}px`,
