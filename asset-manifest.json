@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/React-componets/static/css/main.c1fb2756.css",
-    "main.js": "/React-componets/static/js/main.191224dd.js",
+    "main.js": "/React-componets/static/js/main.17b4ef08.js",
     "static/media/thing.jpg": "/React-componets/static/media/thing.9d28acd0572d6b70b403.jpg",
     "static/media/wednesday-addams.jpg": "/React-componets/static/media/wednesday-addams.d28708c437499167c7d9.jpg",
     "static/media/enid.jpg": "/React-componets/static/media/enid.c102d3de755a66c54973.jpg",
-    "static/media/my-avatar.jpg": "/React-componets/static/media/my-avatar.eec8236bd48be212fc04.jpg",
     "static/media/morticia.jpg": "/React-componets/static/media/morticia.ac7408d66bec4bdb52e4.jpg",
+    "static/media/my-avatar.jpeg": "/React-componets/static/media/my-avatar.f4192086a5f4a77d8fa3.jpeg",
     "static/media/mail.svg": "/React-componets/static/media/mail.0be3ed53b01c8e5830069ff57575bf27.svg",
     "index.html": "/React-componets/index.html",
     "main.c1fb2756.css.map": "/React-componets/static/css/main.c1fb2756.css.map",
-    "main.191224dd.js.map": "/React-componets/static/js/main.191224dd.js.map"
+    "main.17b4ef08.js.map": "/React-componets/static/js/main.17b4ef08.js.map"
   },
   "entrypoints": [
     "static/css/main.c1fb2756.css",
-    "static/js/main.191224dd.js"
+    "static/js/main.17b4ef08.js"
   ]
 }
