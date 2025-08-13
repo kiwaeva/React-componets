@@ -1,6 +1,6 @@
 import Button from "./components/Button";
 import {useState} from "react";
-import avatarImg from './components/images/my-avatar.jpg';
+import avatarImg from './components/images/my-avatar.jpeg';
 import Avatar from "./components/Avatar";
 import Badge from "./components/Badge";
 import Card from "./components/Card";
@@ -22,8 +22,11 @@ function App() {
   return (
 
     <div className="App">
+      <div style={{display:"flex", justifyContent:"flex-end", width:"100%"}}>
+      <DayNightToggle />
+      </div>
       <div className="Avatar">
-        <Avatar name="Evelina Karasjova" imageUrl={avatarImg} size="100"/>
+        <Avatar name="Evelina Karasjova" imageUrl={avatarImg} size="200"/>
       </div>
   {/* If your component uses {children} → use nested content: <Button>Click me!</Button>
       If your component uses {text} → use props: <Button text="Click me!" /> */}
@@ -61,9 +64,6 @@ function App() {
         description={card.description}
     />
   ))}
-      </div>
-      <div>
-      <DayNightToggle />
       </div>
     </div>
   );

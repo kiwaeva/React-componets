@@ -4,10 +4,11 @@ const Avatar = ({ name, imageUrl, size= 50 }) => {
          <img src={imageUrl} alt={name} style={{
             width: `${size}px`,
             height: `${size}px`,
-            objectFit: 'contain',
+            objectFit: 'cover',
+            objectPosition: 'top',
          }}
          />
-         <span style= {{display: 'block', fontWeight: "bold"}}> {name} </span>
+         <span style= {{display: 'flex', fontWeight: "bold"}}> {name} </span>
         </div>
     );
 };

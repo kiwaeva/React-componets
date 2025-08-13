@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import '../index.css';
 
 const DayNightToggle = ({}) => {
-    const [isDark,setIsDark]= useState(true);
+    const [isDark,setIsDark]= useState(false);
     
     useEffect(()=> {
         document.body.className= isDark ? 'dark-mode' : 'light-mode'; 
