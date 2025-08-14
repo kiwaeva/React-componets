@@ -20,8 +20,7 @@ const DayNightToggle = ({}) => {
 
         const toggle = document.querySelector('.toggle');
         if (toggle) {
-            toggle.classList.remove ('dark-mode', 'light-mode'); 
-            toggle.classList.add(isDark ? 'dark-mode' : 'light-mode');
+            toggle.className = `toggle ${isDark ? 'dark-mode' : 'light-mode'}`;
         }
     }, [isDark]);
 

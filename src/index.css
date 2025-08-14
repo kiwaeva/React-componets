@@ -53,17 +53,17 @@ button{
   padding:20px 50px;
 }
 
-.Counter > h1{
+.counter > h1{
 margin-bottom:0;
 }
 
-.Avatar{
+.avatar{
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.Cards{
+.card-box {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -110,3 +110,20 @@ margin-bottom:0;
   color: white;
 }
 
+.like-button button{
+  border-style: none;
+  background-color: gray;
+  font-size:large;
+  border-radius: 6px;
+}
+
+.day-night{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.day-night button{
+  border-style: none;
+  background-color: grey;
+  border-radius: 6px;
+}
