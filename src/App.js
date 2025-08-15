@@ -8,6 +8,7 @@ import cardImg from './components/images/morticia.jpg';
 import cardsData from './components/data/cardsData';
 import DayNightToggle from './components/DayNightToggle';
 import LikeButton from "./components/LikeButton";
+import InputMirror from "./components/InputMirror";
 import './index.css';
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
   ))}
       </div> 
       <div className="like-button"><LikeButton/></div>
+      <div> <InputMirror/> </div>
     </div>
   );
 }
