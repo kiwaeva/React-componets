@@ -22,7 +22,7 @@ I'm learning React by building components from scratch, one step at a time — f
 - [x] Toggle switch (on/off)
 - [x] Like button (heart icon toggle)
 - [x] Input Mirror (input box, live text below)
-- [ ] Dropdown menu (show/hide items)
+- [x] Dropdown menu (show/hide items)
 - [ ] Tabs (switching content)
 
 ---
