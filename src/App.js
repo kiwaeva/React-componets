@@ -10,6 +10,7 @@ import DayNightToggle from './components/DayNightToggle';
 import LikeButton from "./components/LikeButton";
 import InputMirror from "./components/InputMirror";
 import ColorPicker from "./components/ColorPicker";
+import DropdownMenu from "./components/DropdownMenu";
 import './index.css';
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
        <div>
       <ColorPicker/>
       </div>
+      <div><DropdownMenu/></div>
     </div>
   );
 }
