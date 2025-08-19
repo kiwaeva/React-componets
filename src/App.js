@@ -26,10 +26,11 @@ function App() {
   return (
 
     <div className="App">
-      <div className="day-night">
-      <DayNightToggle />
+      <div className="top">
+      <div><DropdownMenu/></div>
+      <div className="day-night"><DayNightToggle/></div>
       </div>
-      <div className="avatar">
+      <div id="my-avatar" className="avatar">
         <Avatar name="Evelina Karasjova" imageUrl={avatarImg} size="200"/>
       </div>
   {/* If your component uses {children} → use nested content: <Button>Click me!</Button>
@@ -57,7 +58,7 @@ function App() {
         <Badge label="Beta" color="purple" icon="🧪" dismissible />
         <Badge label="Error" color="red" icon="⚠️" dismissible />
       </div>
-      <div className="card-box">
+      <div className="card-box" id="cards">
         <Card image={cardImg} title='Morticia Addams' description="Elegant, eerie, and endlessly enchanting." size='50'/>
         {/* If stored in data file in a big project then:  */}
         {cardsData.map((card, index) => (
@@ -75,7 +76,6 @@ function App() {
        <div>
       <ColorPicker/>
       </div>
-      <div><DropdownMenu/></div>
     </div>
   );
 }
