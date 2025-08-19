@@ -136,7 +136,7 @@ justify-content: space-between;
 
 .menu-content{
   background-color: #ebebeb;
-  box-shadow: 2px 4px 5px rgb(148, 148, 148);
+  /* box-shadow: 2px 4px 5px rgb(148, 148, 148); */
 }
 
 .menu-content a{
