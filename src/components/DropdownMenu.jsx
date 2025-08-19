@@ -10,11 +10,10 @@ const DropdownMenu = ({}) => {
             <button onClick={toggleMenu}>Menu:</button>
             {showMenu && (
             <div className="menu-content" >
-                <a>Link 1</a>
-                <a>Link 2</a>
-                <a>Link 3</a>
+                <a href="#my-avatar">My avatar</a>
+                <a href="#cards">Cards</a>
             </div>
-            )};
+            )}
         </div>
     )
 }
