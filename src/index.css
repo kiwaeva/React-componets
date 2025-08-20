@@ -22,7 +22,7 @@ body.light-mode {
 body.light-mode .card,
 body.light-mode .avatar,
 body.light-mode .Badge,
-body.light-mode .Counter {
+body.light-mode .counter {
   background-color: white;
   color: black;
 }
@@ -47,6 +47,12 @@ body.dark-mode .Counter {
   flex-direction: column;
   align-items: start;
   gap: 20px;
+}
+
+.components{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 button{
@@ -92,7 +98,7 @@ margin-bottom:0;
 }
 
 .toggle button {
-  background-color: black;
+  background-color: rgb(71, 159, 218);
   color: white;
   padding: 10px 20px;
   border: none;
