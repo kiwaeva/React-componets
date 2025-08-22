@@ -26,10 +26,10 @@ function Home() {
 
   return (
     <div className="App">
-      <nav className="top">
+      <div className="top">
         <div><DropdownMenu /></div>
         <div className="day-night"><DayNightToggle /></div>
-      </nav>
+      </div>
 
       <header id="my-avatar" className="avatar">
         <Avatar name="Evelina Karasjova" imageUrl={avatarImg} size="200" />

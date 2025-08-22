@@ -7,7 +7,7 @@ const DropdownMenu = ({}) => {
 
     return(
         <div className="dropdown">
-            <button onClick={toggleMenu}>Menu:</button>
+            <button onClick={toggleMenu}>Go to:</button>
             {showMenu && (
             <div className="menu-content" >
                 <a href="#my-avatar">My avatar</a>
