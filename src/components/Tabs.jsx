@@ -3,7 +3,7 @@ import { useState } from "react";
 const MyTabs = ({children}) => {
 const [activeTab, setActiveTab] = useState(0);
 
-const tabButtons = children.map((tab,index)) => (
+const tabButtons = children.map((tab,index) => (
     <button
      key={index}
      onClick={()=> setActiveTab(index)}
@@ -12,9 +12,9 @@ const tabButtons = children.map((tab,index)) => (
         marginRight: '8px',
       }}
     >
-
+        {tab.props.title}
     </button>
-)
+));
     return(
         <>
         
