@@ -3,6 +3,8 @@ import { useState } from "react";
 const MyTabs = ({children}) => {
 const [activeTab, setActiveTab] = useState(0);
 
+const activeContent = children[activeTab];
+
 const tabButtons = children.map((tab,index) => (
     <button
      key={index}
@@ -17,7 +19,9 @@ const tabButtons = children.map((tab,index) => (
 ));
     return(
         <>
-        
+            {tabButtons}
+            {activeContent}
+
         </>
     )
 }
