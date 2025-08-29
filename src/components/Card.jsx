@@ -1,5 +1,3 @@
-import '../index.css';
-
 const Card = ({title, image, description}) => {
     return(
         <div className='card'>

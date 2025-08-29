@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'react';
-import '../index.css';
 
 const DayNightToggle = ({}) => {
     const [isDark,setIsDark]= useState(false);

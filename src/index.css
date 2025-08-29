@@ -15,7 +15,7 @@ code {
 
 /* Light Mode Theme */
 body.light-mode {
-  background-color: #f9f9f9;
+  background-color: white;
   color: black;
 }
 
@@ -195,4 +195,24 @@ a:hover, a:focus{
   font-size: 15px;
   border-radius: 4px;
   transition: all 0.5s ease-out;
+}
+
+.about-title{
+  margin-left: 20px;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;  /* stack children vertically */
+  margin: 20px;
+}
+
+.tab-buttons {
+  display: flex;          /* buttons side by side */
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tab-content {
+  margin-top: 50px;
 }

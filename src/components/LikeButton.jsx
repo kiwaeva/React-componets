@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import '../index.css';
 
 const LikeButton = ({}) => {
 const [likeCount,setIsLikeCount] = useState(0);

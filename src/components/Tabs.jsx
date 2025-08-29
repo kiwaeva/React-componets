@@ -1,16 +1,18 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-const MyTabs = ({children}) => {
+const Tabs = ({children}) => {
 const [activeTab, setActiveTab] = useState(0);
 
-const activeContent = children[activeTab];
+const childrenArray = React.Children.toArray(children);
 
-const tabButtons = children.map((tab,index) => (
+const activeContent = childrenArray[activeTab];
+
+const tabButtons = React.Children.map(children,(tab,index) => (
     <button
      key={index}
      onClick={()=> setActiveTab(index)}
      style={{
-        fontWeight: index === activeIndex ? 'bold' : 'normal',
+        fontWeight: index === activeTab ? 'bold' : 'normal',
         marginRight: '8px',
       }}
     >
@@ -18,12 +20,17 @@ const tabButtons = children.map((tab,index) => (
     </button>
 ));
     return(
-        <>
-            {tabButtons}
-            {activeContent}
+        
+    <div className="tabs-container">
+      <div className="tab-buttons">
+        {tabButtons}
+      </div>
+      <div className="tab-content">
+        {activeContent}
+      </div>
+    </div>
+    
+    );
+};
 
-        </>
-    )
-}
-
-export default MyTabs; 
+export default Tabs; 
