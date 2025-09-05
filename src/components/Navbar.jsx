@@ -3,7 +3,7 @@ const Navbar = ({}) => {
     return(
         <nav>
             <Link to="/">Home</Link>
-            <Link to="">To do</Link>
+            <Link to="/formpage">Form</Link>
             <Link to="/about">About</Link>
         </nav>
     )
